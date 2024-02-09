@@ -5,7 +5,7 @@ function ChooseSection() {
   return (
     <div>
         <div className="container">
-            <h2 className='text-center mb-5'>Why choose React University ?</h2>
+            <h2 className='text-center mb-5'>Why choose Think Tank ?</h2>
             <div className='row g-4'>
                 <div className='col-lg-4'>
                     <Card className='d-flex align-items-center border-0 h-100'>
@@ -19,7 +19,9 @@ function ChooseSection() {
                                 2 trophies received
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                            <mark>Completion Trophies</mark>: These trophies are awarded to users when they complete specific tasks, courses.
+                            <br />
+                            <mark>Achievement Trophies</mark>: Achievement trophies are awarded to users for demonstrating specific achievements or accomplishments beyond mere completion. These achievements could include earning a certain number of points, participating actively in discussions or forums, helping other users, or mastering advanced topics or skills.
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -36,7 +38,9 @@ function ChooseSection() {
                                 We keep our students happy
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                            <mark>Retention and Engagement</mark>: Happy students are more likely to stay engaged with the learning materials and continue using the educational platform. Retaining students is crucial for the success and growth of the website.
+                                <br />
+                            <mark>Learning Effectiveness</mark>: When students are happy, they are more likely to be motivated and enthusiastic about their learning. This positive attitude can lead to better learning outcomes and retention of information
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -50,10 +54,14 @@ function ChooseSection() {
                         </div>
                         <Card.Body>
                             <Card.Title className='text-center text-capitalize mb-3'>
-                                3 locations in UK
+                                2 locations in Eg.
                             </Card.Title>
                             <Card.Text className='text-center'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum qui facilis perspiciatis, ab pariatur! Eaque maxime ratione illum distinctio?
+                                1- Monofia
+                                <br />
+                                2- October
+                                <br />
+                                3- Garphia
                             </Card.Text>
                         </Card.Body>
                     </Card>
