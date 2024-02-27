@@ -1,6 +1,7 @@
 import React from 'react';
 import './Courses.css';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import ArtCourseImg from '../../utils/images/art-course.jpg';
 import BusinessCourseImg from '../../utils/images/business-course.jpg';
 import ComputerScienceCourseImg from '../../utils/images/computer-science-course.jpg';
@@ -60,6 +61,44 @@ const courses = [
         title: 'Sport Course',
         description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
     },
+
+    {
+        id: 8,
+        img: [SportCourseImg],
+        title: 'Sport Course',
+        description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
+    },
+
+    {
+        id: 8,
+        img: [SportCourseImg],
+        title: 'Sport Course',
+        description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
+    },
+    {
+        id: 8,
+        img: [SportCourseImg],
+        title: 'Sport Course',
+        description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
+    },
+    {
+        id: 8,
+        img: [SportCourseImg],
+        title: 'Sport Course',
+        description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
+    },
+    {
+        id: 8,
+        img: [SportCourseImg],
+        title: 'Sport Course',
+        description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
+    },
+    {
+        id: 8,
+        img: [SportCourseImg],
+        title: 'Sport Course',
+        description: 'A sport course is an exhilarating journey into the world of athleticism, teamwork, and competition. It serves as a platform where individuals embark on a transformative exploration of physical fitness, skill development, and sportsmanship'
+    },
 ];
 
 function Courses() {
@@ -76,13 +115,15 @@ function Courses() {
             <div className='row g-4'>
                 {courses.map((course) => (
                     <div key={course.id} className='col-lg-6'>
+                        <Link to="/infoCourses" className='text-decoration-none '>
                         <Card className='text-white shadow scale-hover-effect'>
                             <Card.Img src={course.img} />
                             <Card.ImgOverlay className='d-flex flex-column align-items-center justify-content-center p-md-5'>
-                                <Card.Title className='fs-1 text-danger'>{course.title}</Card.Title>
+                                <Card.Title className='fs-1 text-decoration-none  text-danger'>{course.title}</Card.Title>
                                 <Card.Text className='text-center'>{course.description}</Card.Text>
                             </Card.ImgOverlay>
                         </Card>
+                        </Link>
                     </div>
                 ))}
             </div>

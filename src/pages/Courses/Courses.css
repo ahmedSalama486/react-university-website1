@@ -9,3 +9,6 @@
 .courses-page .card:hover {
     cursor: pointer;
 }
+Link {
+    list-style-type: none;
+}

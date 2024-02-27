@@ -8,10 +8,40 @@ import Courses from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
+import ChatBot from 'react-simple-chatbot';
+
 
 function App() {
   return (
     <div>
+
+<ChatBot 
+    
+    const steps = {[
+{
+  id: '1',
+  message: 'Hello How Can I Help You!',
+  trigger: "aske name",
+},
+{
+  id: 'aske name',
+  message: 'What is you Think!!',
+  end: true,
+},
+{
+  id: '2',
+  message: 'Hello How Can I Help You!',
+  user:true,
+  end: true,
+},
+
+]}
+floating={true}  
+headerTitle={"ThinkBoot"}
+placeholder={"Enter what is in mind!"}
+  />
+
+
       <Navbar expand="lg" className='position-absolute w-100'>
         <Container>
           <Navbar.Brand>
@@ -35,6 +65,9 @@ function App() {
               <Nav.Link href='/about' className='text-uppercase'>About us</Nav.Link>
               <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
+              <Nav.Link href='/contact' className='text-uppercase1 border border-danger rounded px-2'>Sign up</Nav.Link>
+              
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -46,6 +79,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
+        
       </Routes>
 
       <footer>
@@ -105,6 +139,7 @@ function App() {
                     <Link to="/contact" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Get In Touch</li>
                     </Link>
+                    
                   </ul>
                 </div>
                 <div className='col-12 col-md-6 col-lg-7'>
