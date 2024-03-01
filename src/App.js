@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,6 +10,9 @@ import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
 import ChatBot from 'react-simple-chatbot';
+
+
+
 
 
 function App() {
@@ -41,7 +45,6 @@ headerTitle={"ThinkBoot"}
 placeholder={"Enter what is in mind!"}
   />
 
-
       <Navbar expand="lg" className='position-absolute w-100'>
         <Container>
           <Navbar.Brand>
@@ -65,7 +68,7 @@ placeholder={"Enter what is in mind!"}
               <Nav.Link href='/about' className='text-uppercase'>About us</Nav.Link>
               <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
-              <Nav.Link href='/contact' className='text-uppercase1 border border-danger rounded px-2'>Sign up</Nav.Link>
+              <Nav.Link href='/signup' className='text-uppercase1 border border-danger rounded px-2'>Sign up</Nav.Link>
               
               
             </Nav>
@@ -79,7 +82,7 @@ placeholder={"Enter what is in mind!"}
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
-        
+        <Route path='/signup' element={<Contact/>} />
       </Routes>
 
       <footer>
